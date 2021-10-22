@@ -1,9 +1,15 @@
-rows = int(input("7:"))  
-k = 2 * rows - 2    
-for i in range(0, rows):  
-    for j in range(0, k):  
-        print(end=" ")  
-    k = k - 2   
-    for j in range(0, i + 1):  
-        print("* ", end="") 
-    print("")  
+n = 9
+print("Diamond Rival")
+for a1 in range(1, (n+1)//2 + 1): 
+    for a2 in range((n+1)//2 - a1):
+        print(" ", end = "")
+    for a3 in range((a1*2)-1):
+        print("*", end = "")
+    print()
+
+for a1 in range((n+1)//2 + 1, n + 1): 
+    for a2 in range(a1 - (n+1)//2):
+        print(" ", end = "")
+    for a3 in range((n+1 - a1)*2 - 1):
+        print("*", end = "")
+    print()
